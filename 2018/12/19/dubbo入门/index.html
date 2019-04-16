@@ -61,7 +61,7 @@
 	
 	<!-- others: such as change-bg, time... -->
 	<p class="page-name-other">
-		4/2/2019 
+		4/16/2019 
 		<style type="text/css">
 	header:after {
 		content: '';
@@ -220,17 +220,17 @@
 <h3 id="二、-Mac安装搭建Zookeper"><a href="#二、-Mac安装搭建Zookeper" class="headerlink" title="二、 Mac安装搭建Zookeper"></a>二、 Mac安装搭建Zookeper</h3><ul>
 <li>zookeeper支持brew安装,检查安装环境</li>
 </ul>
-<p>输入命令：brew info zookeeper<br><img src="http://pjxfrhmci.bkt.clouddn.com/brew%20info%20zookeeper.png" alt="image"><br>然后执行：brew install zookeeper<br><img src="http://pjxfrhmci.bkt.clouddn.com/install.png" alt="image"><br>安装好后zookeeper配置文件的位置<br>/usr/local/etc/zookeeper配置自定的data log 的位置<br><img src="http://pjxfrhmci.bkt.clouddn.com/zookeeper%E9%85%8D%E7%BD%AE.png" alt="image"></p>
-<h4 id="启动zookeeper"><a href="#启动zookeeper" class="headerlink" title="启动zookeeper"></a>启动zookeeper</h4><p>zkServer.sh start<br><img src="http://pjxfrhmci.bkt.clouddn.com/Zookeper%E5%90%AF%E5%8A%A8.png" alt="image"></p>
-<h5 id="注：命令telnet-127-0-0-1-2181-连接成功验证Zookeeper"><a href="#注：命令telnet-127-0-0-1-2181-连接成功验证Zookeeper" class="headerlink" title="注：命令telnet 127.0.0.1 2181 连接成功验证Zookeeper"></a>注：命令telnet 127.0.0.1 2181 连接成功验证Zookeeper</h5><h5 id="关闭zookeeper"><a href="#关闭zookeeper" class="headerlink" title="关闭zookeeper"></a>关闭zookeeper</h5><p>zkServer.sh stop<br><img src="http://pjxfrhmci.bkt.clouddn.com/%E5%85%B3%E9%97%AD.png" alt="image"></p>
+<p>输入命令：brew info zookeeper<br><img src="http://img.ljhblog.club/brew%20info%20zookeeper.png" alt="image"><br>然后执行：brew install zookeeper<br><img src="http://img.ljhblog.club/install.png" alt="image"><br>安装好后zookeeper配置文件的位置<br>/usr/local/etc/zookeeper配置自定的data log 的位置<br><img src="http://img.ljhblog.club/zookeeper%E9%85%8D%E7%BD%AE.png" alt="image"></p>
+<h4 id="启动zookeeper"><a href="#启动zookeeper" class="headerlink" title="启动zookeeper"></a>启动zookeeper</h4><p>zkServer.sh start<br><img src="http://img.ljhblog.club/Zookeper%E5%90%AF%E5%8A%A8.png" alt="image"></p>
+<h5 id="注：命令telnet-127-0-0-1-2181-连接成功验证Zookeeper"><a href="#注：命令telnet-127-0-0-1-2181-连接成功验证Zookeeper" class="headerlink" title="注：命令telnet 127.0.0.1 2181 连接成功验证Zookeeper"></a>注：命令telnet 127.0.0.1 2181 连接成功验证Zookeeper</h5><h5 id="关闭zookeeper"><a href="#关闭zookeeper" class="headerlink" title="关闭zookeeper"></a>关闭zookeeper</h5><p>zkServer.sh stop<br><img src="http://img.ljhblog.club/%E5%85%B3%E9%97%AD.png" alt="image"></p>
 <h3 id="三、搭建dubbo监控中心"><a href="#三、搭建dubbo监控中心" class="headerlink" title="三、搭建dubbo监控中心"></a>三、搭建dubbo监控中心</h3><p>dubbo <a href="https://github.com/dangdangdotcom/dubbox/archive/dubbox-2.8.4.tar.gz" target="_blank" rel="noopener">下载</a><br>如果你的zookeeper和dubbo-admin在一台服务器上，dubbo-admin不用修改任何内容！</p>
 <ul>
 <li>如果你的 dubbo 和 zookeeper 不在一台服务器上，将war包解压后，修改项目/WEF-INF/dubbo.properties文件，将zookeeper地址改为其所在服务器的地址（这里同时能修改root用户和guest用户的密码）。</li>
 </ul>
-<p><img src="http://pjxfrhmci.bkt.clouddn.com/dubbo%E9%85%8D%E7%BD%AE.png" alt="image"></p>
+<p><img src="http://img.ljhblog.club/dubbo%E9%85%8D%E7%BD%AE.png" alt="image"></p>
 <p>我是直接下载war 如下：<br>下载地址：链接：<a href="https://pan.baidu.com/s/1ggeIIHX" target="_blank" rel="noopener">https://pan.baidu.com/s/1ggeIIHX</a> 密码：ck4h</p>
 <p>将war包放到tomcat的webapps下，启动tomcat，访问<a href="http://localhost:8080/dubbo-admin-2.6.0/" target="_blank" rel="noopener">http://localhost:8080/dubbo-admin-2.6.0/</a>即可看到界面，输入用户名，密码root就可以看到如下图：</p>
-<p><img src="http://pjxfrhmci.bkt.clouddn.com/dubbo%E9%A1%B5%E9%9D%A2.png" alt="image"></p>
+<p><img src="http://img.ljhblog.club/dubbo%E9%A1%B5%E9%9D%A2.png" alt="image"></p>
 
 					
 				</div>
